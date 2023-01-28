@@ -1,0 +1,28 @@
+// colors
+$sun-color: #FB8500;
+$sky-color: #219EBC;
+$beach-color: #FFB703;
+$ocean-color: #023047;
+$foam-color: #8ECAE6;
+
+// fonts
+
+@font-face {
+  font-family: 'Dosis';
+  src: url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;600&display=swap');
+}
+
+$global-font: Dosis, sans-serif;
+
+
+// provided file
+
+$fonts-headline: "arial narrow", Arial, Verdana, sans-serif;
+$fonts-body: verdana, arial, sans-serif;
+$background-color: #daede2;
+$primary: #77c4d3;
+$accent1: #ea2e49;
+$accent2: rgba(246, 247, 146, 0.9);
+$grey-sidebar: rgba(51, 55, 69, 0.9);
+$text-dark: #333;
+$text-light: #fff;
