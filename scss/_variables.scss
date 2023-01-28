@@ -1,19 +1,14 @@
-// colors
-$sun-color: #FB8500;
-$sky-color: #219EBC;
-$beach-color: #FFB703;
-$ocean-color: #023047;
-$foam-color: #8ECAE6;
-
 // fonts
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;600&display=swap");
 
-@font-face {
-  font-family: 'Dosis';
-  src: url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;600&display=swap');
-}
+// colors
+$sun-color: #fb8500;
+$sky-color: #219ebc;
+$beach-color: #ffb703;
+$ocean-color: #023047;
+$foam-color: #8ecae6;
 
-$global-font: Dosis, sans-serif;
-
+$global-font: "Dosis", sans-serif;
 
 // provided file
 
