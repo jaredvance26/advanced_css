@@ -64,21 +64,27 @@ body {
   0% {
     margin-left: 25%;
   }
+
   20% {
     margin-left: 61%;
   }
+
   30% {
     margin-left: 61%;
   }
+
   50% {
     margin-left: 100%;
   }
+
   70% {
     margin-left: 61%;
   }
+
   80% {
     margin-left: 61%;
   }
+
   100% {
     margin-left: 25%;
   }
@@ -124,10 +130,36 @@ h1 {
     box-shadow: 0 0 10px #f3ea9b, 0 0 20px #f3ea9b, 0 0 30px #f3ea9b,
       0 0 40px #f3ea9b, 0 0 50px #f3ea9b, 0 0 60px #f3ea9b, 0 0 70px #f3ea9b;
   }
+
   to {
     box-shadow: 0 0 30px #f3ea9b, 0 0 40px #ffe600, 0 0 50px #ffe600,
       0 0 60px #ffe600, 0 0 70px #ffe600, 0 0 80px #ffe600, 0 0 90px #ffe600;
   }
+}
+
+#zen-preamble,
+#zen-explanation {
+  background-color: #219EBC;
+
+}
+
+.main {
+  margin: 0;
+}
+
+.summary,
+.preamble,
+.explanation,
+.participation,
+.benefits,
+.requirements {
+  padding: 0 10% 0;
+}
+
+.participation,
+.benefits,
+.requirements {
+  background-color: #f3cd6c;
 }
 
 h2 {
@@ -137,4 +169,28 @@ h2 {
   text-align: center;
   z-index: 1;
   position: relative;
+}
+
+h3 {
+  margin: 0 0 0 0;
+  color: #2e484c;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.8em;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 2;
+}
+
+.participation::before {
+  content: "";
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  background: #2c5c7e;
+  z-index: 10;
+  padding: 0;
+  margin: 0;
 }
