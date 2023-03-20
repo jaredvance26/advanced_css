@@ -137,10 +137,8 @@ h1 {
   }
 }
 
-#zen-preamble,
-#zen-explanation {
-  background-color: #219EBC;
-
+#zen-preamble {
+  background-color: #219ebc;
 }
 
 .main {
@@ -153,13 +151,13 @@ h1 {
 .participation,
 .benefits,
 .requirements {
-  padding: 0 10% 0;
+  padding: 30px 10% 30px;
 }
 
-.participation,
-.benefits,
-.requirements {
+.main {
   background-color: #f3cd6c;
+  padding-top: 50px;
+  position: relative;
 }
 
 h2 {
@@ -174,7 +172,7 @@ h2 {
 h3 {
   margin: 0 0 0 0;
   color: #2e484c;
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: "Julius Sans One", sans-serif;
   font-size: 1.8em;
   font-weight: normal;
   text-transform: uppercase;
@@ -184,12 +182,13 @@ p {
   line-height: 2;
 }
 
-.participation::before {
+.main::before {
   content: "";
   height: 100px;
   width: 100%;
   position: absolute;
-  background: #2c5c7e;
+  top: -30px;
+  background: #219ebc;
   z-index: 10;
   padding: 0;
   margin: 0;

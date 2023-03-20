@@ -105,9 +105,8 @@ h1 {
     box-shadow: 0 0 30px #f3ea9b, 0 0 40px #ffe600, 0 0 50px #ffe600, 0 0 60px #ffe600, 0 0 70px #ffe600, 0 0 80px #ffe600, 0 0 90px #ffe600;
   }
 }
-#zen-preamble,
-#zen-explanation {
-  background-color: #219EBC;
+#zen-preamble {
+  background-color: #219ebc;
 }
 
 .main {
@@ -120,13 +119,13 @@ h1 {
 .participation,
 .benefits,
 .requirements {
-  padding: 0 10% 0;
+  padding: 30px 10% 30px;
 }
 
-.participation,
-.benefits,
-.requirements {
+.main {
   background-color: #f3cd6c;
+  padding-top: 50px;
+  position: relative;
 }
 
 h2 {
@@ -150,12 +149,13 @@ p {
   line-height: 2;
 }
 
-.participation::before {
+.main::before {
   content: "";
   height: 100px;
   width: 100%;
   position: absolute;
-  background: #2c5c7e;
+  top: -30px;
+  background: #219ebc;
   z-index: 10;
   padding: 0;
   margin: 0;
