@@ -3,6 +3,10 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 html {
   margin: 0;
   padding: 0;
@@ -140,7 +144,7 @@ h1 {
   }
 }
 .summary > p {
-  background-color: #afd5dd7b;
+  background-color: rgba(175, 213, 221, 0.482);
 }
 .summary > p:nth-child(2) {
   width: 60%;
@@ -287,5 +291,86 @@ div.requirements {
     z-index: -5;
     background: url(boat.svg);
     background-size: 100%;
+  }
+}
+.sidebar {
+  font-family: "Julius Sans One", sans-serif;
+  width: 300px;
+  background-color: rgba(175, 213, 221, 0.482);
+  padding: 10px;
+  border-radius: 10px;
+  margin: auto;
+}
+.sidebar h3 {
+  padding-bottom: 10px;
+  padding-top: 15px;
+}
+.sidebar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  overflow: hidden;
+}
+.sidebar ul li a:nth-child(1)::after {
+  content: "\a";
+  white-space: pre;
+}
+
+.sidebar ul li a:nth-child(1) {
+  text-transform: uppercase;
+}
+
+.sidebar ul li {
+  margin: 15px 0px 15px 50px;
+}
+
+@media screen and (min-width: 900px) {
+  .summary,
+  .preamble,
+  .main {
+    padding-right: 350px;
+  }
+  .sidebar {
+    float: right;
+    width: 300px;
+    position: absolute;
+    top: 280px;
+    right: 5px;
+  }
+  .extra5::after {
+    content: "";
+    position: absolute;
+    top: 2000px;
+    right: 50px;
+    background: url("./crab.png");
+    background-size: contain;
+    height: 150px;
+    width: 150px;
+    animation: crabwalk 10s linear infinite;
+  }
+  @keyframes wobble {
+    0% {
+      rotate: -10deg;
+    }
+    100% {
+      rotate: 10deg;
+    }
+  }
+  @keyframes crabwalk {
+    0% {
+      transform: translate(0%, 0%);
+    }
+    25% {
+      transform: translate(50%, 50%);
+    }
+    50% {
+      transform: translate(0%, 100%);
+    }
+    75% {
+      transform: translate(-50%, 50%);
+    }
+    100% {
+      transform: translate(0%, 0%);
+    }
   }
 }
