@@ -299,11 +299,13 @@ div.requirements {
 .sidebar {
   font-family: "Julius Sans One", sans-serif;
   width: 300px;
-  background-color: rgba(175, 213, 221, 0.482);
+  background-color: rgba(175, 213, 221, 0.8);
   padding: 10px;
   border-radius: 10px;
   margin: auto;
+  color: black;
 }
+
 .sidebar h3 {
   padding-bottom: 10px;
   padding-top: 15px;
@@ -351,14 +353,7 @@ div.requirements {
     width: 150px;
     animation: crabwalk 10s linear infinite;
   }
-  @keyframes wobble {
-    0% {
-      rotate: -10deg;
-    }
-    100% {
-      rotate: 10deg;
-    }
-  }
+
   @keyframes crabwalk {
     0% {
       transform: translate(0%, 0%);
@@ -374,6 +369,42 @@ div.requirements {
     }
     100% {
       transform: translate(0%, 0%);
+    }
+  }
+}
+@media screen and (max-width: 899px) {
+  .sidebar {
+    position: absolute;
+    top: 0px;
+    right: -350px;
+    width: 300px;
+    background-color: rgba(92, 200, 214, 0.95);
+    transition: 2s;
+    z-index: 1000;
+    padding: 35px;
+    border: #d53b19;
+    border-style: dashed;
+  }
+
+  .sidebar:hover {
+    right: 0px;
+  }
+
+  @keyframes slideMenu {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-280px);
+    }
+  }
+
+  @keyframes wobble {
+    0% {
+      rotate: -10deg;
+    }
+    100% {
+      rotate: 10deg;
     }
   }
 }
